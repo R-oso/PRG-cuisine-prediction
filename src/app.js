@@ -5,7 +5,7 @@ let nn;
 document.getElementById("pairAndPredictBtn").addEventListener("click", classifyIngredients);
 
 nn = ml5.neuralNetwork({ task: "classification", debug: true });
-nn.load("../model/model.json", () => modelLoaded());
+nn.load("./model/model.json", () => modelLoaded());
 
 function modelLoaded(error, model) {
   if (!nn) {
