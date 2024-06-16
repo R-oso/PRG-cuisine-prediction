@@ -10,17 +10,25 @@
   <body>
     <section class="container">
       <div id="inputSection">
-        <label for="foodInput">Enter Food Item or Ingredient:</label><br />
+        <h1 class="heading">Recipe Ingredient Identifier</h1>
+        <label class="foodInput" for="foodInput">Enter Food Items or Ingredients:</label><br />
         <input type="text" id="foodInput" placeholder="e.g., salmon, chocolate, red wine" /><br />
         <button id="pairAndPredictBtn">Pair & Predict</button>
       </div>
 
       <div class="outputSection">
-        <h2>Recommended Pairings:</h2>
-        <ul id="recommendedPairings"></ul>
-        <h2>Predicted Cuisine:</h2>
-        <p id="cuisinePrediction"></p>
+        <div class="cuisine">
+          <h2>Predicted Cuisine:</h2>
+          <p id="cuisinePrediction"></p>
+        </div>
+
+        <div class="pairings">
+          <h2>Recommended Pairings:</h2>
+          <ul id="recommendedPairings"></ul>
+        </div>
       </div>
+
+      <div class="green-rectangle"></div>
     </section>
 
     <!-- **scripts** -->
