@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Ingredient Identifier</title>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section class="container">
+      <div id="inputSection">
+        <label for="foodInput">Enter Food Item or Ingredient:</label><br />
+        <input type="text" id="foodInput" placeholder="e.g., salmon, chocolate, red wine" /><br />
+        <button id="pairAndPredictBtn">Pair & Predict</button>
+      </div>
+
+      <div class="outputSection">
+        <h2>Recommended Pairings:</h2>
+        <ul id="recommendedPairings"></ul>
+        <h2>Predicted Cuisine:</h2>
+        <p id="cuisinePrediction"></p>
+      </div>
+    </section>
+
+    <!-- **scripts** -->
+    <script src="./src/ingredients.js"></script>
+
+    <!-- Uncomment for training model -->
+    <!-- <script src="./src/train.js"></script> -->
+
+    <!-- Uncomment for working application -->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
