@@ -2,7 +2,7 @@
 async function extractAllIngredients() {
   try {
     // Load training data (adjust path as necessary)
-    const trainResponse = await fetch("./data/train.json");
+    const trainResponse = await fetch("../data/train.json");
     console.log("Loading training data...");
     const trainData = await trainResponse.json();
 
